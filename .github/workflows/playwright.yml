@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Playwright Script
         run: |
-          pytest tests/prac.py
+          pytest tests/test_cielo_breez.py
 
       - name: Upload Traces (if failed)
         if: ${{ failure() }}
