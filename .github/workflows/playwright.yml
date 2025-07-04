@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Playwright Script
         run: |
-          python prac.py
+          pytest tests/prac.py
 
       - name: Upload Traces (if failed)
         if: ${{ failure() }}
